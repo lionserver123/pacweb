@@ -1,0 +1,58 @@
+.container {
+    /* 確保容器不會比螢幕寬 */
+    height: auto;
+    max-width: 1080px;
+    padding-left: 0px;
+    width: 105%;
+
+    /* 讓高度自動根據寬度調整 */
+}
+
+.container img {
+    /* 確保圖像不會比容器寬 */
+    height: auto;
+
+    /* 讓高度自動根據寬度調整 */
+    display: block;
+
+    /* 避免 inline 元素間的空隙 */
+    width: 100%;
+
+    /* 讓圖像在容器中水平置中 */
+}
+
+.fade-in-image {
+    animation: fadeIn 2.5s infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.myButton {
+    background-image: url(assets/image/Button_TWG.png);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 2% 6%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
